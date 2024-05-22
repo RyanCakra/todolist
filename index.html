@@ -3,10 +3,173 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Todo list</title>
   </head>
   <body>
+    <div class="wrapper">
+      <div class="screen-background"></div>
+      <div class="screen-home screen">
+        <section class="head-wrapper">
+          <div class="menu-btn">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier"><path d="M4 12H20M4 8H20M4 16H12" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g>
+            </svg>
+          </div>
+          <div class="welcome-section">
+            <div class="content">
+              <h1>Hello, Patrick!</h1>
+              <p>Today you have 4 tasks</p>
+            </div>
+            <div class="img-section">
+              <div class="backdrop"></div>
+              <img src="/assets/img/avatar.png" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <!-- categories -->
+        <section class="categories-wrapper">
+          <!-- <h2>Task</h2> -->
+          <div class="categories">
+            <div class="category">
+              <div class="left">
+                <img src="/assets/img/personal.png" alt="" />
+                <div class="content">
+                  <h1>Personal Priority</h1>
+                  <p>4 Tasks</p>
+                </div>
+              </div>
+              <div class="options">
+                <div class="toogle-btn">
+                  <svg fill="#000000" viewBox="0 0 32 32" enable-background="new 0 0 32 32" id="Glyph" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path d="M13,16c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,14.346,13,16z" id="XMLID_294_"></path>
+                      <path d="M13,26c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,24.346,13,26z" id="XMLID_295_"></path>
+                      <path d="M13,6c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,4.346,13,6z" id="XMLID_297_"></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="category">
+              <div class="left">
+                <img src="/assets/img/sport.png" alt="" />
+                <div class="content">
+                  <h1>Sport</h1>
+                  <p>1 Tasks</p>
+                </div>
+              </div>
+              <div class="options">
+                <div class="toogle-btn">
+                  <svg fill="#000000" viewBox="0 0 32 32" enable-background="new 0 0 32 32" id="Glyph" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path d="M13,16c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,14.346,13,16z" id="XMLID_294_"></path>
+                      <path d="M13,26c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,24.346,13,26z" id="XMLID_295_"></path>
+                      <path d="M13,6c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,4.346,13,6z" id="XMLID_297_"></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="category">
+              <div class="left">
+                <img src="/assets/img/health.png" alt="" />
+                <div class="content">
+                  <h1>Health</h1>
+                  <p>2 Tasks</p>
+                </div>
+              </div>
+              <div class="options">
+                <div class="toogle-btn">
+                  <svg fill="#000000" viewBox="0 0 32 32" enable-background="new 0 0 32 32" id="Glyph" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path d="M13,16c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,14.346,13,16z" id="XMLID_294_"></path>
+                      <path d="M13,26c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,24.346,13,26z" id="XMLID_295_"></path>
+                      <path d="M13,6c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,4.346,13,6z" id="XMLID_297_"></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="category">
+              <div class="left">
+                <img src="/assets/img/movie.png" alt="" />
+                <div class="content">
+                  <h1>Movie</h1>
+                  <p>4 Tasks</p>
+                </div>
+              </div>
+              <div class="options">
+                <div class="toogle-btn">
+                  <svg fill="#000000" viewBox="0 0 32 32" enable-background="new 0 0 32 32" id="Glyph" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path d="M13,16c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,14.346,13,16z" id="XMLID_294_"></path>
+                      <path d="M13,26c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,24.346,13,26z" id="XMLID_295_"></path>
+                      <path d="M13,6c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,4.346,13,6z" id="XMLID_297_"></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="category">
+              <div class="left">
+                <img src="/assets/img/diary.png" alt="" />
+                <div class="content">
+                  <h1>Diary</h1>
+                  <p>4 Tasks</p>
+                </div>
+              </div>
+              <div class="options">
+                <div class="toogle-btn">
+                  <svg fill="#000000" viewBox="0 0 32 32" enable-background="new 0 0 32 32" id="Glyph" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path d="M13,16c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,14.346,13,16z" id="XMLID_294_"></path>
+                      <path d="M13,26c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,24.346,13,26z" id="XMLID_295_"></path>
+                      <path d="M13,6c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,4.346,13,6z" id="XMLID_297_"></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="listdone-wrapper">
+          <h2>Task Done!</h2>
+          <div class="lists-done">
+            <div class="list-done">done bg</div>
+            <div class="list-done">done bg</div>
+            <div class="list-done">done bg</div>
+            <div class="list-done">done bg</div>
+            <div class="list-done">done bg</div>
+            <div class="list-done">done bg</div>
+            <div class="list-done">done bg</div>
+          </div>
+        </section>
+      </div>
+
+      <!-- task -->
+      <div class="screen-category screen">category</div>
+    </div>
     <script src="/assets/js/index.js"></script>
   </body>
 </html>
