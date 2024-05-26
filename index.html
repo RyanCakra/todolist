@@ -28,7 +28,10 @@
           <div class="welcome-section">
             <div class="content">
               <h1>Hello, Patrick!</h1>
-              <p>Today you have 4 tasks</p>
+              <p>Today you have <span class="totalTasks">4</span> tasks</p>
+              <div id="time">
+                <p id="current-time">tezx</p>
+              </div>
             </div>
             <div class="img-section">
               <div class="backdrop"></div>
@@ -39,7 +42,6 @@
 
         <!-- categories -->
         <section class="categories-wrapper">
-          <!-- <h2>Task</h2> -->
           <div class="categories">
             <article class="category">
               <div class="left">
@@ -63,111 +65,19 @@
                 </div>
               </div>
             </article>
-            <article class="category">
-              <div class="left">
-                <img src="/assets/img/sport.png" alt="" />
-                <div class="content">
-                  <h1>Sport</h1>
-                  <p>1 Tasks</p>
-                </div>
-              </div>
-              <div class="options">
-                <div class="toogle-btn">
-                  <svg fill="#000000" viewBox="0 0 32 32" enable-background="new 0 0 32 32" id="Glyph" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <path d="M13,16c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,14.346,13,16z" id="XMLID_294_"></path>
-                      <path d="M13,26c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,24.346,13,26z" id="XMLID_295_"></path>
-                      <path d="M13,6c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,4.346,13,6z" id="XMLID_297_"></path>
-                    </g>
-                  </svg>
-                </div>
-              </div>
-            </article>
-            <article class="category">
-              <div class="left">
-                <img src="/assets/img/health.png" alt="" />
-                <div class="content">
-                  <h1>Health</h1>
-                  <p>2 Tasks</p>
-                </div>
-              </div>
-              <div class="options">
-                <div class="toogle-btn">
-                  <svg fill="#000000" viewBox="0 0 32 32" enable-background="new 0 0 32 32" id="Glyph" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <path d="M13,16c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,14.346,13,16z" id="XMLID_294_"></path>
-                      <path d="M13,26c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,24.346,13,26z" id="XMLID_295_"></path>
-                      <path d="M13,6c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,4.346,13,6z" id="XMLID_297_"></path>
-                    </g>
-                  </svg>
-                </div>
-              </div>
-            </article>
-            <article class="category">
-              <div class="left">
-                <img src="/assets/img/movie.png" alt="" />
-                <div class="content">
-                  <h1>Movie</h1>
-                  <p>4 Tasks</p>
-                </div>
-              </div>
-              <div class="options">
-                <div class="toogle-btn">
-                  <svg fill="#000000" viewBox="0 0 32 32" enable-background="new 0 0 32 32" id="Glyph" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <path d="M13,16c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,14.346,13,16z" id="XMLID_294_"></path>
-                      <path d="M13,26c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,24.346,13,26z" id="XMLID_295_"></path>
-                      <path d="M13,6c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,4.346,13,6z" id="XMLID_297_"></path>
-                    </g>
-                  </svg>
-                </div>
-              </div>
-            </article>
-            <article class="category">
-              <div class="left">
-                <img src="/assets/img/diary.png" alt="" />
-                <div class="content">
-                  <h1>Books</h1>
-                  <p>4 Tasks</p>
-                </div>
-              </div>
-              <div class="options">
-                <div class="toogle-btn">
-                  <svg fill="#000000" viewBox="0 0 32 32" enable-background="new 0 0 32 32" id="Glyph" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <path d="M13,16c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,14.346,13,16z" id="XMLID_294_"></path>
-                      <path d="M13,26c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,24.346,13,26z" id="XMLID_295_"></path>
-                      <path d="M13,6c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,4.346,13,6z" id="XMLID_297_"></path>
-                    </g>
-                  </svg>
-                </div>
-              </div>
-            </article>
           </div>
         </section>
+
+        <!-- list done  -->
         <section class="listdone-wrapper">
           <h2>Task Done!</h2>
           <div class="lists-done">
-            <article class="list-done">done bg</article>
-            <article class="list-done">done bg</article>
-            <article class="list-done">done bg</article>
-            <article class="list-done">done bg</article>
-            <article class="list-done">done bg</article>
-            <article class="list-done">done bg</article>
             <article class="list-done">done bg</article>
           </div>
         </section>
       </section>
 
-      <!-- category task -->
+      <!-- category screen task -->
       <section class="screen-category screen">
         <header class="head-wrapper">
           <button class="back-btn">
@@ -194,30 +104,13 @@
         <div class="category-details">
           <img src="assets/img/avatar.png" alt="" id="category-img" />
           <div class="details">
-            <p>8 tasks</p>
-            <h1>Personal</h1>
+            <p class="category-tasks">8 tasks</p>
+            <h1 class="category-title">Personal</h1>
           </div>
         </div>
         <div class="tasks-wrapper">
           <article class="tasks">
-            <div class="task-wrapper">
-              <label for="task" class="task">
-                <input type="checkbox" name="" id="task" />
-                <span class="checkmark">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                  </svg>
-                </span>
-                <p>mengoding brutal 10 jam</p>
-              </label>
-              <div class="delete">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                  <path
-                    d="M135.2 17.7C140.6 6.8 151.7 0 163.8 0H284.2c12.1 0 23.2 6.8 28.6 17.7L320 32h96c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 96 0 81.7 0 64S14.3 32 32 32h96l7.2-14.3zM32 128H416V448c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V128zm96 64c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16z"
-                  />
-                </svg>
-              </div>
-            </div>
+            <div class="task-wrapper"></div>
           </article>
         </div>
       </section>
@@ -231,30 +124,29 @@
 
       <!-- blackdrop screen -->
       <div class="black-backdrop"></div>
+
       <!-- form add task -->
       <div class="add-task">
         <div class="add-task-backdrop"></div>
         <h1 class="heading">add Task</h1>
         <div class="input-group">
           <label for="task-input">Task</label>
-          <input type="text" id="task-input" required />
+          <input type="text" id="task-input" placeholder="type your new task here.." required />
+        </div>
+        <div class="input-group">
+          <label for="task-input">Date</label>
+          <input type="date" id="deadline-input" />
         </div>
         <div class="input-group">
           <label for="category-select">Category</label>
           <select name="" id="category-select">
-            <option value="personal">Personal</option>
-            <option value="sport">Sport</option>
-            <option value="health">Health</option>
-            <option value="movie">Movie</option>
-            <option value="books">Books</option>
+            <option value="" disabled selected>-- Choose a category --</option>
           </select>
         </div>
         <div class="input-group">
           <label for="priority-select">Priority</label>
           <select name="" id="priority-select">
-            <option value="low">low</option>
-            <option value="medium">medium</option>
-            <option value="high">high</option>
+            <option value="" disabled selected>-- Choose a priority --</option>
           </select>
         </div>
         <div class="button-group">

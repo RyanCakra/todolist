@@ -46,6 +46,15 @@ body {
   transform: translate(-50%, -60%);
 }
 
+@media (min-width: 768px) {
+  .wrapper {
+    height: 50rem;
+    width: 25rem;
+    border-radius: 40px;
+    border: 10px solid #1f1f1f;
+  }
+}
+
 .screen-background {
   position: absolute;
   top: 0;
@@ -92,6 +101,11 @@ body {
   position: relative;
 }
 
+#time {
+  margin-top: 5px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
 .img-section img {
   width: 5rem;
 }
@@ -129,6 +143,7 @@ body {
 .categories .category {
   background-color: #dffff4;
   color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
   padding: 1.5rem 1rem;
   transition: all 0.3s;
@@ -211,7 +226,8 @@ body {
 }
 
 .list-done {
-  background-color: rgb(252, 252, 203);
+  background-color: rgb(203, 252, 240);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
   padding: 0.4rem 0.2rem;
   flex: 1 1 100%;
@@ -221,16 +237,31 @@ body {
 .list-done:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px 5px #0000000e;
-  background-color: yellow;
+  background-color: rgb(100, 255, 216);
 }
 
-@media (min-width: 768px) {
-  .wrapper {
-    height: 50rem;
-    width: 25rem;
-    border-radius: 40px;
-    border: 10px solid #1f1f1f;
-  }
+.no-task-done {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.overdue-task {
+  color: red;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.overdue-completed {
+  background-color: rgba(255, 0, 0, 0.2);
+  color: red;
+}
+
+.overdue-completed:hover {
+  background-color: red;
+  color: #fff;
+}
+
+.overdue-completed:hover .overdue-task {
+  color: #fff;
 }
 
 /* category screen */
@@ -252,7 +283,7 @@ body {
   gap: 1rem;
 }
 .category-details img {
-  width: 6rem;
+  width: 4rem;
 }
 .category-details .details p {
   opacity: 0.7;
@@ -265,6 +296,13 @@ body {
   height: calc(100%- 12rem);
   padding-bottom: 20px;
   overflow: auto;
+}
+
+.no-task {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  opacity: 0.7;
 }
 
 .tasks {
@@ -381,7 +419,7 @@ body {
 
 .add-task-btn.active {
   z-index: 1;
-  bottom: 25rem;
+  bottom: 30rem;
   transform: rotate(45deg);
 }
 
@@ -392,6 +430,7 @@ body {
   width: 100%;
   padding: 20px 30px;
   transition: all 0.3s;
+  z-index: 2;
 }
 
 .add-task.active {
@@ -461,8 +500,8 @@ body {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 150%;
-  height: 25rem;
+  width: 170%;
+  height: 30rem;
   border-radius: 50% 50% 0 0;
   background-color: #ffffff;
 }
